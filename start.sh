@@ -1,23 +1,33 @@
 #!/bin/bash
 
-# ================================
-# 🚀 Script de deployment TecnoMatch
-# ================================
+COMMAND=$1
 
-echo "=== Instalando dependencias frontend ==="
-cd frontend
-npm ci
+if [ "$COMMAND" == "install" ]; then
+    echo "=== Instalando frontend ==="
+    cd frontend
+    npm ci
+    cd ..
 
-echo "=== Construyendo frontend ==="
-npm run build
+    echo "=== Instalando backend ==="
+    cd Nuevo_back
+    npm ci
+    cd ..
 
-echo "=== Moviendo dist al backend ==="
-rm -rf ../Nuevo_back/dist
-cp -r dist ../Nuevo_back/dist
+elif [ "$COMMAND" == "build" ]; then
+    echo "=== Construyendo frontend ==="
+    cd frontend
+    npm run build
+    cd ..
 
-echo "=== Instalando dependencias backend ==="
-cd ../Nuevo_back
-npm ci
+    echo "=== Moviendo dist al backend ==="
+    rm -rf Nuevo_back/dist
+    cp -r frontend/dist Nuevo_back/dist
 
-echo "=== Iniciando backend ==="
-node src/app.js
+elif [ "$COMMAND" == "start" ]; then
+    echo "=== Iniciando backend ==="
+    cd Nuevo_back
+    node src/app.js
+
+else
+    echo "Comando desconocido: $COMMAND"
+fi

@@ -2,9 +2,9 @@
   "builds": [
     {
       "dir": ".",
-      "installCommand": "cd frontend && npm ci && cd ../Nuevo_back && npm ci",
-      "buildCommand": "cd frontend && npm run build && rm -rf ../Nuevo_back/dist && cp -r dist ../Nuevo_back/dist",
-      "startCommand": "cd Nuevo_back && node src/app.js"
+      "installCommand": "./start.sh install",
+      "buildCommand": "./start.sh build",
+      "startCommand": "./start.sh start"
     }
   ],
   "env": {
