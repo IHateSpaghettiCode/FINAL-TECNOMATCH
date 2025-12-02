@@ -1,0 +1,28 @@
+export const questions = [ // Exporta el array de preguntas para el test MBTI
+  {id: 2, texto: "Prefiero recargar energías pasando tiempo a solas.", dimension: "E/I", polo: "I", mapaPuntos: { "1": "I", "2": "I", "3": null, "4": "E", "5": "E" } }, // Pregunta 2: Introversión
+  { id: 3, texto: "Me entusiasma participar en conversaciones grupales.", dimension: "E/I", polo: "E", mapaPuntos: { "1": "E", "2": "E", "3": null, "4": "I", "5": "I" } }, // Pregunta 3: Extraversión
+  { id: 4, texto: "Después de socializar mucho, necesito aislarme un rato.", dimension: "E/I", polo: "I", mapaPuntos: { "1": "I", "2": "I", "3": null, "4": "E", "5": "E" } }, // Pregunta 4: Introversión
+  { id: 5, texto: "Me gusta iniciar interacciones con personas desconocidas.", dimension: "E/I", polo: "E", mapaPuntos: { "1": "E", "2": "E", "3": null, "4": "I", "5": "I" } }, // Pregunta 5: Extraversión
+  { id: 6, texto: "Disfruto más de actividades tranquilas que de eventos sociales grandes.", dimension: "E/I", polo: "I", mapaPuntos: { "1": "I", "2": "I", "3": null, "4": "E", "5": "E" } }, // Pregunta 6: Introversión
+  { id: 7, texto: "Prefiero aprender en grupo que de forma individual.", dimension: "E/I", polo: "E", mapaPuntos: { "1": "E", "2": "E", "3": null, "4": "I", "5": "I" } }, // Pregunta 7: Extraversión
+  { id: 8, texto: "Me concentro más en los detalles y hechos concretos que en ideas abstractas.", dimension: "S/N", polo: "S", mapaPuntos: { "1": "S", "2": "S", "3": null, "4": "N", "5": "N" } }, // Pregunta 8: Sensación
+  { id: 9, texto: "Me resulta natural pensar en posibilidades y futuros escenarios.", dimension: "S/N", polo: "N", mapaPuntos: { "1": "N", "2": "N", "3": null, "4": "S", "5": "S" } }, // Pregunta 9: Intuición
+  { id: 10, texto: "Confío más en experiencias pasadas que en suposiciones.", dimension: "S/N", polo: "S", mapaPuntos: { "1": "S", "2": "S", "3": null, "4": "N", "5": "N" } }, // Pregunta 10: Sensación
+  { id: 11, texto: "Prefiero imaginar cómo podrían evolucionar las cosas antes que basarme solo en lo que veo ahora.", dimension: "S/N", polo: "N", mapaPuntos: { "1": "N", "2": "N", "3": null, "4": "S", "5": "S" } }, // Pregunta 11: Intuición
+  { id: 12, texto: "Trabajo mejor siguiendo procedimientos ya probados.", dimension: "S/N", polo: "S", mapaPuntos: { "1": "S", "2": "S", "3": null, "4": "N", "5": "N" } }, // Pregunta 12: Sensación
+  { id: 13, texto: "Disfruto encontrar patrones o significados ocultos en la información.", dimension: "S/N", polo: "N", mapaPuntos: { "1": "N", "2": "N", "3": null, "4": "S", "5": "S" } }, // Pregunta 13: Intuición
+  { id: 14, texto: "Me siento más cómodo con datos verificables que con teorías no comprobadas.", dimension: "S/N", polo: "S", mapaPuntos: { "1": "S", "2": "S", "3": null, "4": "N", "5": "N" } }, // Pregunta 14: Sensación
+  { id: 15, texto: "Tomo decisiones basándome más en la lógica que en los sentimientos.", dimension: "T/F", polo: "T", mapaPuntos: { "1": "T", "2": "T", "3": null, "4": "F", "5": "F" } }, // Pregunta 15: Pensamiento
+  { id: 16, texto: "Considero primero cómo afectará una decisión a las personas antes que a los resultados.", dimension: "T/F", polo: "F", mapaPuntos: { "1": "F", "2": "F", "3": null, "4": "T", "5": "T" } }, // Pregunta 16: Sentimiento
+  { id: 17, texto: "Es más importante ser justo que ser compasivo.", dimension: "T/F", polo: "T", mapaPuntos: { "1": "T", "2": "T", "3": null, "4": "F", "5": "F" } }, // Pregunta 17: Pensamiento
+  { id: 18, texto: "Prefiero mantener la armonía aunque no siempre sea lo más eficiente.", dimension: "T/F", polo: "F", mapaPuntos: { "1": "F", "2": "F", "3": null, "4": "T", "5": "T" } }, // Pregunta 18: Sentimiento
+  { id: 19, texto: "Analizo los problemas objetivamente, incluso si eso hiere sentimientos.", dimension: "T/F", polo: "T", mapaPuntos: { "1": "T", "2": "T", "3": null, "4": "F", "5": "F" } }, // Pregunta 19: Pensamiento
+  { id: 20, texto: "Me guío más por valores personales que por reglas estrictas.", dimension: "T/F", polo: "F", mapaPuntos: { "1": "F", "2": "F", "3": null, "4": "T", "5": "T" } }, // Pregunta 20: Sentimiento
+  { id: 21, texto: "Creo que la verdad debe decirse, aunque pueda incomodar.", dimension: "T/F", polo: "T", mapaPuntos: { "1": "T", "2": "T", "3": null, "4": "F", "5": "F" } }, // Pregunta 21: Pensamiento
+  { id: 22, texto: "Me gusta planificar y seguir un calendario establecido.", dimension: "J/P", polo: "J", mapaPuntos: { "1": "J", "2": "J", "3": null, "4": "P", "5": "P" } }, // Pregunta 22: Juicio
+  { id: 23, texto: "Prefiero mantener mis opciones abiertas en lugar de decidir rápido.", dimension: "J/P", polo: "P", mapaPuntos: { "1": "P", "2": "P", "3": null, "4": "J", "5": "J" } }, // Pregunta 23: Percepción
+  { id: 24, texto: "Me tranquiliza tener todo organizado antes de comenzar una tarea.", dimension: "J/P", polo: "J", mapaPuntos: { "1": "J", "2": "J", "3": null, "4": "P", "5": "P" } }, // Pregunta 24: Juicio
+  { id: 25, texto: "Me adapto fácilmente a cambios de última hora sin estrés.", dimension: "J/P", polo: "P", mapaPuntos: { "1": "P", "2": "P", "3": null, "4": "J", "5": "J" } }, // Pregunta 25: Percepción
+  { id: 26, texto: "Prefiero listas y horarios claros para cumplir objetivos.", dimension: "J/P", polo: "J", mapaPuntos: { "1": "J", "2": "J", "3": null, "4": "P", "5": "P" } }, // Pregunta 26: Juicio
+  { id: 27, texto: "Disfruto improvisando más que siguiendo un plan estricto.", dimension: "J/P", polo: "P", mapaPuntos: { "1": "P", "2": "P", "3": null, "4": "J", "5": "J" } }, // Pregunta 27: Percepción
+  { id: 28, texto: "Me incomoda la incertidumbre; necesito claridad en las tareas.", dimension: "J/P", polo: "J", mapaPuntos: { "1": "J", "2": "J", "3": null, "4": "P", "5": "P" } }]; // Pregunta 28: Juicio

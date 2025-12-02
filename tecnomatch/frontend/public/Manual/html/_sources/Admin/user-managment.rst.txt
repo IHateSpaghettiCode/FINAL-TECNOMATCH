@@ -1,0 +1,57 @@
+Gestión de Usuarios
+===================
+
+La sección **Gestión de Usuarios** permite a los administradores visualizar, buscar, crear, editar y eliminar usuarios registrados en TecnoMatch.
+
+.. image:: ../_static/gestion_usuarios.png
+   :alt: gestion de usuarios
+   :align: center
+   :width: 600px
+
+Vista General
+-------------
+
+Al ingresar a esta sección, se muestra una tabla con todos los usuarios existentes en el sistema. Cada fila contiene:
+
+- **Nombre completo**
+- **Correo electrónico**
+- **Rol** (Usuario / Administrador)
+- **Estado** (Activo / Inactivo)
+- **Acciones disponibles**: *Editar* y *Eliminar*
+
+Barra de búsqueda
+-----------------
+
+En la parte superior aparece un campo para buscar usuarios por:
+
+- Nombre
+- Apellido
+- Correo
+- Nombre de usuario
+
+Esta función facilita localizar rápidamente un registro específico.
+
+Botón “Crear Usuario”
+----------------------
+
+Permite desplegar el formulario de creación de nuevos usuarios.
+
+.. image:: ../_static/crear_usuario.png
+   :alt: gestion de usuarios
+   :align: center
+   :width: 600px
+
+Tabla de usuarios
+-----------------
+
+Muestra de manera ordenada todos los usuarios registrados. Los estados se representan con colores:
+
+- **Verde:** Activo
+- **Amarillo:** Advertencia o pendiente
+
+Acciones
+--------
+
+- **Editar:** Modifica la información del usuario seleccionado.
+- **Eliminar:** Elimina el registro del usuario.
+

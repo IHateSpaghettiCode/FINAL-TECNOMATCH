@@ -1,0 +1,11 @@
+Ver recomendaciones
+===================
+
+Finalmente, TecnoMatch te muestra **recomendaciones personalizadas** de carreras TIC según tu tipo MBTI.
+
+- Entra a la sección **Recomendaciones**.  
+- Explora las carreras sugeridas y lee su descripción.  
+- Puedes guardar tus favoritas o buscar más información.
+
+.. note::
+   Imagen sugerida: ``_static/recomendaciones.png``

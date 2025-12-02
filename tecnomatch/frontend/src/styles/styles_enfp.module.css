@@ -1,0 +1,452 @@
+/* ------- Osmo [https://osmo.supply/] ------- */
+/* Osmo UI: https://slater.app/10324/23333.css */
+
+body {
+  background-color: #DCDBDA;
+  color: #1a1a1a;
+  font-size: 1vw;
+  font-family: arial, sans-serif;
+cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b239d7aeb290a31ac5_cursor-default%402x.svg")
+      2 0,
+    auto;
+    position: relative; /* Necesario para que las burbujas se acomoden bien */
+    overflow: hidden;   /* Evita scrollbars por las burbujas */
+}
+
+/*se sigue intentando esto*/
+
+
+a,
+button {
+  cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b212e6b71494aa67ff_cursor-pointer%402x.svg")
+      12 0,
+    pointer;
+}
+
+.logo {
+  display: flex;
+  align-items: right;
+  margin-left: auto; 
+  margin-right: 10px;
+  color: #000;
+}
+
+.logoIcon {
+  width: 30px;   /* ajusta al tamaño que quieras */
+  height: 30px;  /* igual que width para que no se deforme */
+  object-fit: contain;  /* asegura que se ajuste sin distorsión */
+  margin-right: 8px;
+}
+.cloneable {
+  padding: var(--container-padding);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  font-size: 1.1vw;
+}
+
+.tab-container {
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 2.5em;
+  display: flex;
+}
+
+.tab-layout-container {
+  width: 100%;
+  max-width: 36em;
+  height: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.tab-container-bottom {
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.tab-container-top {
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  
+}
+
+.tab-layout-col {
+  width: 50%;
+}
+
+.tab-content-wrap {
+  width: 100%;
+  min-width: 24em;
+  position: relative;
+}
+
+.content-button__bg {
+  z-index: -1;
+  background-color: #efeeec;
+  border-radius: .25em;
+  position: absolute;
+  inset: 0%;
+}
+
+.content-p {
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 1.4;
+}
+
+.tab-button__bg {
+  z-index: 0;
+  background-color: #efeeec0f;
+  border: 1px solid #efeeec14;
+  border-radius: .25em;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0%;
+}
+
+.tab-content-item {
+  z-index: 1;
+  grid-column-gap: 1.25em;
+  grid-row-gap: 1.25em;
+  visibility: hidden;
+  flex-flow: column;
+  display: flex;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.tab-content-item.active {
+  visibility: visible;
+}
+
+.tab-layout {
+  z-index: 1;
+  grid-row-gap: 3em;
+  flex-flow: wrap;
+  width: 100%;
+  min-height: 37em;
+  display: flex;
+  position: relative;
+}
+
+.filter-bar {
+  background-color: #FF8A00; /* naranja cálido */
+  border: 1px solid #FFD54F;
+  border-radius: .5em;
+  padding: .5em;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+
+.filter-button {
+  background-color: #0000;
+  border: 1px solid #efeeec00;
+  padding: 1.125em 1.5em;
+  transition: border-color .2s;
+  position: relative;
+  font-size: inherit;
+}
+
+.filter-button.active {
+  border-color: #c4c4c4; /*aca es el border cuando esta seleccionado*/
+  border-radius: .25em;
+}
+
+.filter-button__p {
+  z-index: 1;
+  font-size: 1.125em;
+  position: relative;
+  color:var(--color-light);
+}
+
+.tab-visual-wrap {
+  border-radius: .5em;
+  width: 100%;
+  height: 42em;
+  max-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-visual-item {
+  visibility: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+
+.tab-visual-item.active {
+  visibility: visible;
+}
+
+.tab-image {
+  object-fit: cover;
+  border-radius: .5em;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+}
+
+.tab-content__heading {
+  letter-spacing: -.02em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.75em;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.tab-layout-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.tab-content__button {
+  color: #131313;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.osmo-credits {
+  z-index: 999;
+  pointer-events: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4em;
+  padding: 1em;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.osmo-credits__p {
+  pointer-events: auto;
+  color: #efeeec80;
+  text-align: center;
+  margin: 0;
+  font-family: PP Neue Montreal, Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.osmo-credits__p-a {
+  color: #efeeec;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('https://cdn.prod.website-files.com/6819ed8312518f61b84824df/6819ed8312518f61b84825ba_PPNeueMontreal-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/* ------------------------- Osmo [https://osmo.supply/] ------------------------- */
+/* ------------------------- Variables ------------------------------------------- */
+
+:root {
+  --color-light: var(--color-neutral-200);
+  --color-dark: var(--color-neutral-800);
+  --color-primary: #ff4c24;
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #efeeec;
+  --color-neutral-300: #e3e1de;
+  --color-neutral-400: #cbc8c5;
+  --color-neutral-500: #818180;
+  --color-neutral-600: #2c2c2c;
+  --color-neutral-700: #1f1f1f;
+  --color-neutral-800: #131313;
+  --color-neutral-900: #000000;
+  --color-white: var(--color-neutral-100);
+  --color-black: var(--color-neutral-900);
+  --color-error: var(--color-primary);
+  --color-success: #0ba954; 
+  --cubic-default: cubic-bezier(0.65, 0.05, 0, 1);
+  --duration-default: 0.735s;
+  --animation-default: var(--duration-default) var(--cubic-default);
+  --gap: 2em;
+  --section-padding: calc(3.5em + (var(--gap) * 2));
+  --container-padding: 2em;
+  --header-height: calc(1.5em + (var(--gap) * 2));
+  --footer-height: calc(2.785em + (var(--gap) * 2));
+}
+
+/* Tablet */
+@media screen and (max-width: 991px) {
+  :root {
+    --container-padding: 1.5em;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 767px) {
+  :root {
+    --container-padding: 1em;
+  }
+}
+
+
+
+/* ------------------------- Scaling System by Osmo [https://osmo.supply/] -------------------------  */
+
+/* Desktop */
+:root {
+  --size-unit: 16; /* body font-size in design - no px */
+  --size-container-ideal: 1440; /* screen-size in design - no px */
+  --size-container-min: 992px;
+  --size-container-max: 1920px;
+  --size-container: clamp(var(--size-container-min), 100vw, var(--size-container-max));
+  --size-font: calc(var(--size-container) / (var(--size-container-ideal) / var(--size-unit)));
+}
+
+/* Tablet */
+@media screen and (max-width: 991px) {
+  :root {
+    --size-container-ideal: 834; /* screen-size in design - no px */
+    --size-container-min: 768px;
+    --size-container-max: 991px;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 767px) {
+  :root {
+    --size-container-ideal: 390; /* screen-size in design - no px */
+    --size-container-min: 480px;
+    --size-container-max: 767px;
+  }
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 479px) {
+  :root {
+    --size-container-ideal: 390; /* screen-size in design - no px */
+    --size-container-min: 320px;
+    --size-container-max: 479px;
+  }
+}
+
+
+/* ------------------------- Hide Scrollbar -------------------------------------------------- */
+
+body ::-webkit-scrollbar,
+body::-webkit-scrollbar {display: none;} /* Chrome, Safari, Opera */
+body {-ms-overflow-style: none;} /* IE & Edge */
+html {scrollbar-width: none;} /* Firefox */
+
+/* ------------------------- Reset -------------------------------------------------- */
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: initial;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+svg {
+  max-width: none;
+  height: auto;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+}
+
+/* Selection, NO MODIFICAR XD */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  text-shadow: none;
+}
+
+.subtitle-text {
+  display: block; /* Para que aparezca en una nueva línea debajo del título */
+  font-size: 0.4em; /* Más pequeño que el título principal */
+  font-weight: 300; /* Más ligero que el título principal */
+  opacity: 0.7; /* Un poco transparente */
+  margin-top: 0.2em; /* Pequeño espacio superior */
+  line-height: 1.2; /* Ajusta el interlineado si es necesario */
+}
+
+/* Aqui se asegura un espacio entre titulo y tabs con el contenido*/
+.tab-container-top {
+  margin-bottom: 1.5rem; /* separa la .filter-bar del texto */
+}
+
+/* Se mantiene el wrap posicionado para referencia */
+.tab-content-wrap {
+  position: relative;
+}
+
+/* Que por defecto no ocupen espacio */
+.tab-content-item {
+  position: absolute;
+  inset: auto 0 0;   /* como ya estaba */
+  visibility: hidden;
+}
+
+/* Aqui se evita el solape haciendo que el objeto SI ocupe espacio*/
+.tab-content-item.active {
+  position: relative;   /* clave: vuelve al flujo */
+  inset: auto;          /* limpia el inset */
+  visibility: visible;
+}
+
+ 

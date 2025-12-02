@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital@1&display=swap');
+
+:root {
+  --positionNow: 0;
+}
+
+/* Contenedor principal del carrusel */
+.content {
+  width: 100%;
+  max-width: 1349px;
+  height: 455px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Carrusel que se desplaza horizontalmente */
+.contentImages {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: transform 0.5s ease;
+  transform: translateX(var(--positionNow));
+}
+
+/* Contenedor auxiliar con todos los slides */
+.contentAux {
+  display: flex;
+  height: 100%;
+}
+
+/* Cada slide */
+.contentImagesItem {
+  flex: 0 0 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center; /* centrado vertical */
+  justify-content: center; /* centrado horizontal */
+  padding-left: 2%;
+  border-radius: 20px;
+}
+
+/* Información de cada slide */
+.itemContentInfo {
+  max-height: 70%; /* ocupa más espacio del slide */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra el contenido verticalmente */
+  align-items: flex-start; /* o center si quieres texto centrado */
+  color: #fff;
+  text-shadow: 3px 3px 6px #111;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 20px; /* más padding */
+  border-radius: 15px;
+}
+
+/* Animación */
+.animation {
+  animation: dropContentInfo 1s ease-in forwards;
+}
+
+@keyframes dropContentInfo {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Título */
+.nombre {
+  font-family: 'Bebas Neue', cursive;
+  font-size: clamp(2rem, 4vw, 3.5em); /* escala según tamaño */
+  color: var(--color-azul-suave);
+}
+
+/* Descripción */
+.descripcion {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.2em);
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Botón */
+.itemContentInfo span {
+  width: 140px;
+  margin: 10px 0;
+  background: var(--color-azul);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: clamp(0.9rem, 1.2vw, 1.1em);
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.itemContentInfo span:hover {
+  background: var(--color-azul-osc);
+  transform: scale(0.95);
+}
+
+/* Botones laterales */
+.buttonLeft,
+.buttonRight {
+  z-index: 10;
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flechas */
+.buttonLeft span,
+.buttonRight span {
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.6);
+  border-radius: 50%;
+  padding: 8px 18px;
+  transition: all 0.3s ease;
+}
+
+.buttonLeft span:hover,
+.buttonRight span:hover {
+  background: var(--color-azul-osc);
+  transform: scale(0.9);
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .nombre {
+    font-size: 2.2em;
+  }
+  .descripcion {
+    font-size: 1em;
+  }
+  .itemContentInfo span {
+    font-size: 1em;
+    width: 120px;
+  }
+  .content {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nombre {
+    font-size: 1.6em;
+  }
+  .descripcion {
+    font-size: 0.9em;
+  }
+  .content {
+    height: 240px;
+  }
+}
+
+/* Dots */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: var(--color-azul-osc);
+}

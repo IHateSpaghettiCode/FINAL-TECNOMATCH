@@ -1,0 +1,22 @@
+Funcionalidades Principales
+===========================
+
+En esta sección encontrarás explicaciones paso a paso sobre las funciones clave del aplicativo TecnoMatch.
+
+.. contents::
+   :local:
+   :depth: 2
+   :backlinks: entry
+
+---
+
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+
+   funcionalidades/registro_usuario
+   funcionalidades/inicio_sesion
+   funcionalidades/creacion_perfil
+   funcionalidades/test_mbti
+   funcionalidades/visualizacion_resultados
+   funcionalidades/ver_recomendaciones

@@ -1,0 +1,16 @@
+.pageContainer {
+  padding: 40px 20px;
+}
+
+.heading {
+  color: #1f3d3a;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+

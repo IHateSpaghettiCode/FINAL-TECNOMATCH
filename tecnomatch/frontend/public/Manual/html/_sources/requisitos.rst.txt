@@ -1,0 +1,24 @@
+Requisitos del Sistema
+=====================
+
+Antes de instalar y usar TecnoMatch, asegúrate de que tu equipo cumpla con las siguientes condiciones básicas.  
+No necesitas conocimientos técnicos avanzados: solo verificar que tu computador tenga los recursos y programas mencionados.
+
+Hardware mínimo
+---------------
+
+- **Procesador:** 1 GHz o superior  
+- **Memoria RAM:** 2 GB como mínimo (4 GB recomendados para un mejor rendimiento)  
+- **Espacio en disco:** Al menos 500 MB disponibles  
+
+Software necesario
+-----------------
+
+- **Sistema operativo:** Windows 10 o superior, macOS 10.14 o versiones más recientes, o alguna distribución de Linux moderna.  
+- **Navegador web:** Google Chrome, Mozilla Firefox o Microsoft Edge (se recomienda tener la última versión instalada).  
+- **Conexión a internet:** Requerida para acceder al sitio web y realizar el test MBTI en línea.  
+
+---
+
+💡 *Nota:* No es necesario instalar programas adicionales ni bases de datos.  
+TecnoMatch funciona directamente desde el navegador, ofreciendo una experiencia sencilla y accesible para cualquier usuario.

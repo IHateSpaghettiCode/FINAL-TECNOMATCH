@@ -1,0 +1,43 @@
+Descripción de la Interfaz de Usuario (UI)
+==========================================
+
+En esta sección encontrarás una descripción clara de cada parte de la interfaz principal de **TecnoMatch**, para que puedas familiarizarte fácilmente con su entorno visual.
+
+Pantalla principal
+------------------
+
+Al ingresar a TecnoMatch, se muestra una pantalla de bienvenida con un diseño limpio y moderno.  
+En la parte superior se encuentra la barra de navegación con el nombre del aplicativo y un menú desplegable (ícono ☰) que permite acceder a las principales opciones del sistema.
+
+En el centro, verás el mensaje:
+
+> **“Bienvenido a TecnoMatch”**  
+> Descubre tu perfil MBTI y conecta con las mejores oportunidades en el mundo de la tecnología.
+
+Debajo de este mensaje se encuentran dos botones principales:
+
+- **Haz tu test vocacional →**: te lleva directamente al inicio del test MBTI.  
+- **Saber más**: ofrece información adicional sobre el propósito del aplicativo.
+
+Menús
+-----
+
+Desde el menú lateral puedes acceder a diferentes secciones del sitio:  
+- **Inicio:** vuelve a la pantalla principal.  
+- **Iniciar sesión / Registrarse:** permite acceder o crear una cuenta.  
+- **Realizar test:** inicia el test MBTI para obtener tus resultados.  
+- **Ver resultados:** muestra tus resultados y afinidades con carreras TIC.  
+- **Ver recomendaciones:** te lleva a la sección donde se presentan las carreras recomendadas según tu tipo de personalidad.
+
+Botones e interacción
+---------------------
+
+Los botones de TecnoMatch se presentan de forma clara, con texto visible y colores que cambian al pasar el cursor sobre ellos (efecto hover).  
+Todos los elementos interactivos están diseñados para guiarte de manera sencilla en el uso del aplicativo.
+
+.. image:: _static/interfaz_home.png
+   :alt: Pantalla principal de TecnoMatch
+   :align: center
+   :width: 90%
+
+

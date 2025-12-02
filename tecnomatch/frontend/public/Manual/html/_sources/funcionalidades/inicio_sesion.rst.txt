@@ -1,0 +1,13 @@
+Inicio de sesión
+================
+
+Desde aquí los usuarios registrados pueden ingresar a su cuenta.
+
+- Ingresa tu **correo electrónico** y **contraseña**.  
+- Pulsa el botón **Entrar** para acceder a tu perfil.  
+- Si aún no tienes cuenta, puedes cambiar a la vista de **Registro** desde esta misma pantalla.
+
+.. image:: ../_static/login_home.png
+   :alt: Pantalla de inicio de sesión de TecnoMatch
+   :align: center
+   :width: 600px

@@ -1,0 +1,21 @@
+Primeros Pasos / Inicio Rápido
+==============================
+
+Esta guía te ayudará a comenzar rápidamente con las funciones básicas de **TecnoMatch**.  
+Ideal para quienes quieren ir directo al grano.
+
+1. Abre **TecnoMatch** desde tu navegador preferido.  
+   En el menú lateral, despliega las opciones y selecciona **“Iniciar sesión”** o **“Realizar test”**.  
+   En ambos casos, serás redirigido a la página de inicio de sesión de *TecnoMatch*.
+
+2. Dentro del inicio de sesión, selecciona la opción correspondiente:
+
+   - **Iniciar sesión:**  
+     Si ya tienes una cuenta, ingresa tu **correo electrónico** y **contraseña** registrados.
+
+   - **Registrarse:**  
+     Si aún no tienes una cuenta, completa el formulario con tus **datos básicos**, incluyendo tu correo electrónico, nombre de usuario y una contraseña (deberás confirmarla para verificarla).
+
+3. Una vez dentro, podrás acceder al menú principal donde podrás **realizar el test MBTI**, **consultar tus resultados** y **ver las recomendaciones personalizadas** según tu tipo de personalidad.
+
+💡 *Consejo:* Guarda tu sesión iniciada si usas un dispositivo personal. Esto te permitirá acceder más rápido la próxima vez que entres a TecnoMatch.

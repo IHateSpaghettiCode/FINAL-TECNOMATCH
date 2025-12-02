@@ -1,0 +1,145 @@
+/* --- Estilos personalizados para IndexPage --- */
+
+.indexMain {
+  min-height: 100vh;
+  background-color: var(--color-neutral-200);
+  color: var(--color-dark);
+  font-family: 'PP Neue Montreal', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em;
+  max-width: 36em;
+  margin: 0 auto;
+  gap: 2.5em;
+}
+
+.indexSection {
+  width: 100%;
+  background: var(--color-neutral-100);
+  border-radius: 1em;
+  padding: 1.5em;
+  color: var(--color-dark);
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 8px rgba(44,44,44,0.04);
+}
+
+.indexSectionMuted {
+  background: var(--color-neutral-200);
+}
+
+.indexSectionMuted70 {
+  background: rgba(239,238,236,0.7);
+}
+
+.indexTitle {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  color: var(--color-primary);
+  user-select: none;
+}
+
+.indexSubtitle {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+  color: var(--color-dark);
+  user-select: text;
+}
+
+.indexWelcomeCard {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 0.5em;
+  padding: 1em 1.25em;
+  margin-bottom: 1.5em;
+  font-weight: 600;
+  user-select: none;
+}
+
+.indexButton {
+  width: 100%;
+  padding: 0.75em 0;
+  border-radius: 0.5em;
+  font-weight: 600;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.75em;
+  transition: background 0.2s;
+}
+
+.indexButtonDefault {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.indexButtonDefault:hover {
+  background: #e0431f;
+}
+
+.indexButtonOutline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.indexButtonOutline:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.indexImgCard {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.indexImgLogin {
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
+  object-fit: cover;
+  margin-bottom: 1.5em;
+}
+
+.indexTextMuted {
+  color: var(--color-neutral-500);
+}
+
+.indexListDisc {
+  list-style: disc inside;
+  margin-bottom: 1.5em;
+}
+
+.indexFooter {
+  width: 100%;
+  background: rgba(239,238,236,0.9);
+  border-radius: 1em;
+  padding: 1.5em;
+  color: var(--color-dark);
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.indexFooter h3 {
+  font-weight: 600;
+  font-size: 1.125em;
+  margin-bottom: 0.5em;
+}
+
+.indexFooter a {
+  text-decoration: underline;
+  color: var(--color-primary);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.indexFooter a:hover {
+  color: #e0431f;
+}

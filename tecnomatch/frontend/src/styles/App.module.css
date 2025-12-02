@@ -1,0 +1,489 @@
+:root {
+  --color-azul: #6EC1C0;
+  --color-azul-osc: #355D5E;
+  --color-azul-suave: #CFE6E8;
+  --color-azul-claro: #9BD6E0;
+  --color-gris: #F1F3F5;
+  --color-texto: #222;
+  --color-footer: #2A2A2A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 🔹 Ajustes generales para scroll */
+html,
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative; /* para las formas globales */
+}
+
+body {
+  background: var(--color-gris);
+  background-image: url("/Fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* --- Formas flotantes generales en body --- */
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body::before {
+  width: 220px;
+  height: 220px;
+  background: rgba(255,255,255,0.04);
+  top: 200px;
+  left: 80px;
+  transform: rotate(10deg);
+}
+
+body::after {
+  width: 280px;
+  height: 280px;
+  background: rgba(0,0,0,0.02);
+  top: 700px;
+  right: 100px;
+  transform: rotate(-12deg);
+}
+
+/* 🔹 Contenedor principal para asegurar scroll correcto */
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 94px; /* Altura del header */
+  position: relative;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  margin-left: 0;
+  position: relative; /* para formas en mainContent */
+}
+
+/* --- Header --- */
+.mainHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  gap: 20px;
+}
+
+/* Logo texto con ícono */
+.logoText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: var(--color-azul-osc);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  animation: logoZoom 0.5s ease-out;
+  z-index: 1001;
+  margin-left: 40px;
+}
+
+@keyframes logoZoom {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.logoIcon {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.logoIcon:hover {
+  transform: scale(1.05);
+}
+
+.btnNav {
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1001;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+.searchBar input {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.searchBar i {
+  margin-left: 8px;
+  color: var(--color-azul-osc);
+}
+
+/* --- Side menu --- */
+.sideNav {
+  position: fixed;
+  top: 94px;
+  left: -250px;
+  bottom: 0;
+  width: 220px;
+  background: var(--color-azul-osc);
+  transition: left 0.3s ease;
+  z-index: 999;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+#btnNav:checked ~ .sideNav {
+  left: 0;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  list-style: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navigation a,
+.navigation button {
+  color: #fff;
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navigation a:hover,
+.navigation button:hover {
+  background-color: #264646;
+}
+
+/* --- Welcome --- */
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+  min-height: 300px;
+  background: linear-gradient(135deg, #6EC1C0, #9BD6E0);
+  color: #fff;
+  padding: 20px;
+  position: relative; /* para formas */
+}
+
+/* Formas flotantes en welcome */
+.welcome::before,
+.welcome::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.welcome::before {
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,0.08);
+  top: 20px;
+  left: 40px;
+  transform: rotate(15deg);
+}
+
+.welcome::after {
+  width: 180px;
+  height: 180px;
+  background: rgba(0,0,0,0.03);
+  bottom: 30px;
+  right: 50px;
+  transform: rotate(-20deg);
+}
+
+.welcomeContent {
+  max-width: 700px;
+}
+
+.welcomeContent h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 12px;
+}
+
+.welcomeContent p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-bottom: 16px;
+}
+
+.btnPrimary {
+  background-color: #355D5E;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+}
+
+.btnPrimary:hover { background-color: #6EC1C0; }
+
+.btnSecondary {
+  background-color: #CFE6E8;
+  color: #355D5E;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+}
+
+.btnSecondary:hover { background-color: #9BD6E0; }
+
+/* --- Main Content --- */
+.mainContent {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: calc(100vh - 200px);
+  position: relative; /* necesario para pseudoelementos */
+}
+
+/* Formas flotantes en mainContent */
+.mainContent::before,
+.mainContent::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.mainContent::before {
+  width: 150px;
+  height: 150px;
+  background: rgba(255,255,255,0.08);
+  top: 50px;
+  left: 30px;
+  transform: rotate(25deg);
+}
+
+.mainContent::after {
+  width: 250px;
+  height: 250px;
+  background: rgba(0,0,0,0.03);
+  bottom: 40px;
+  right: 20px;
+  transform: rotate(-15deg);
+}
+
+.card {
+  background: linear-gradient(135deg, #CFE6E8, #9BD6E0);
+  padding: 16px 20px;
+  border-radius: 16px;
+  width: 250px;
+  margin: 16px;
+  transition: all 0.3s ease;
+  text-align: center;
+  color: #355D5E;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: var(--color-azul-osc);
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+/* --- Footer --- */
+footer {
+  background: var(--color-footer);
+  color: #eee;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.manualBtn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #ffffff10;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.manualBtn:hover { background: #ffffff20; }
+
+/* --- Modal --- */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+}
+
+.modalOpen {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modalClosing {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.modalContent {
+  background: #fff;
+  color: #333;
+  max-width: 500px;
+  width: 90%;
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transform: translateY(-20px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modalOpen .modalContent {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modalClosing .modalContent {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.modalContent h2 {
+  margin-bottom: 15px;
+}
+
+.modalContent p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.modalContent .btnPrimary {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* --- Breadcrumb --- */
+.breadcrumb {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  color: #355D5E;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.breadcrumb a {
+  color: #355D5E;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span.separator {
+  margin: 0 5px;
+  color: #355D5E;
+}

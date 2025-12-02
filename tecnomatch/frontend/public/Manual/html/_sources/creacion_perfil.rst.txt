@@ -1,0 +1,11 @@
+Creación de perfil
+==================
+
+Después de registrarte, podrás configurar tu perfil personal.
+
+- Desde el menú principal, selecciona **Mi perfil**.  
+- Completa o actualiza tus datos personales.  
+- Guarda los cambios con el botón **Actualizar perfil**.
+
+.. note::
+   Imagen sugerida: ``_static/perfil_usuario.png``

@@ -1,0 +1,312 @@
+:root {
+  --color-accent: #38b2ac;
+  --color-accent-dark: #2c7a7b;
+  --color-bg: #f8f9fa;
+  --color-text: #2d3748;
+  --color-card: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ==== CONTENEDOR GENERAL ==== */
+.userzoneContainer {
+  display: grid;
+  grid-template-columns: 260px 1fr 260px;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 80px);
+}
+
+/* ==== SIDEBARS ==== */
+.userzoneSidebar {
+  background: linear-gradient(180deg, var(--color-accent-dark), var(--color-accent));
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow-y: auto;
+}
+
+.userzoneSidebar h2 {
+  margin: 0 0 15px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  padding-bottom: 8px;
+}
+
+.userzoneSidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.userzoneSidebar li {
+  margin-bottom: 10px;
+}
+
+.userzoneSidebar a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.userzoneSidebar a:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* ==== CARD CENTRAL ==== */
+.userzoneCard {
+  background: var(--color-card);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Foto de perfil */
+.profilePic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid var(--color-accent);
+  object-fit: cover;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.profilePic:hover {
+  transform: scale(1.05);
+}
+
+.changePicBtn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  border: 2px solid var(--color-accent);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--color-accent-dark);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.changePicBtn:hover {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* Info usuario */
+.userInfo {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.userInfo strong {
+  color: var(--color-accent-dark);
+}
+
+/* Botón test */
+.testBtn {
+  margin-top: 20px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  background: var(--color-accent);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.testBtn:hover {
+  background: var(--color-accent-dark);
+  transform: scale(1.05);
+}
+
+/* ==== NAVIGATION BUTTONS ==== */
+.navigationButtons {
+  grid-column: span 3;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.backBtn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: var(--color-accent);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.backBtn:hover {
+  background: var(--color-accent-dark);
+}
+
+/* ==== Mejora visual zona de usuario ==== */
+
+/* Nombre más moderno */
+.userName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent-dark);
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+/* Correo más suave */
+.userEmail {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+
+/* MBTI resaltado */
+.userMBTI {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  color: #444;
+}
+
+.userMBTI strong {
+  font-weight: 600;
+  color: var(--color-accent-dark);
+}
+
+.userMBTI span {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+  color: #fff;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease;
+}
+
+.userMBTI span:hover {
+  transform: scale(1.05);
+}
+
+/* Contenedor de la foto + botón */
+.profilePicContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===============================
+   NUEVOS ESTILOS PARA USERZONE
+   =============================== */
+
+/* Banner detrás de la foto */
+.profileBanner {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(135deg, #6ec1c0, #355d5e);
+  border-radius: 12px 12px 0 0;
+  margin-bottom: -70px; /* hace que la foto quede "sobrepuesta" */
+  position: relative;
+  z-index: 0;
+}
+
+/* Contenedor de foto + banner */
+.profilePicContainer {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+/* Foto circular */
+.profilePic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+/* Botón para cambiar foto */
+.changePicBtn {
+  margin-top: 0.5rem;
+  background: #6ec1c0;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+.changePicBtn:hover {
+  background: #355d5e;
+}
+
+/* Tarjeta de info del usuario */
+.userInfo {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* MBTI resaltado */
+.userMBTI {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+.userMBTI span {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  background: #6ec1c0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Botón test */
+.testBtn {
+  margin-top: 1rem;
+  background: #355d5e;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+.testBtn:hover {
+  background: #6ec1c0;
+}
+

@@ -1,0 +1,37 @@
+Gestión de Carreras
+===================
+
+La sección **Gestión de Carreras** permite a los administradores visualizar todas las carreras registradas en TecnoMatch. Desde esta vista pueden consultarse los programas académicos disponibles, ver su información básica y acceder a las acciones de edición o eliminación.
+
+.. image:: ../_static/carreras_principal.png
+   :alt: Error al iniciar sesión
+   :align: center
+   :width: 600px
+
+Elementos principales
+---------------------
+
+- **Tabla de Carreras:** muestra el listado completo de carreras, incluyendo:
+  - Nombre de la carrera
+  - Universidad asociada
+  - Slug (identificador utilizado en la plataforma)
+  - Acciones disponibles (Editar / Eliminar)
+
+- **Barra de búsqueda:** permite filtrar carreras por nombre para localizarlas fácilmente.
+
+- **Paginación:** si hay muchas carreras registradas, el sistema divide los resultados en varias páginas. Los botones de navegación permiten avanzar o retroceder entre ellas.
+
+- **Botón “Crear Carrera”:** permite abrir el formulario para registrar una nueva carrera dentro de la plataforma.
+
+.. image:: ../_static/carreras_principal2.png
+   :alt: Error al iniciar sesión
+   :align: center
+   :width: 600px
+
+Acciones disponibles
+--------------------
+
+- **Editar:** permite modificar los datos de una carrera existente.
+- **Eliminar:** elimina la carrera seleccionada del sistema.
+
+

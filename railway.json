@@ -1,0 +1,10 @@
+{
+  "builds": [
+    {
+      "dir": ".",
+      "installCommand": "cd frontend && npm install && cd ../Nuevo_back && npm install",
+      "buildCommand": "cd frontend && npm run build && rm -rf ../Nuevo_back/dist && cp -r dist ../Nuevo_back/dist",
+      "startCommand": "cd Nuevo_back && node src/app.js"
+    }
+  ]
+}

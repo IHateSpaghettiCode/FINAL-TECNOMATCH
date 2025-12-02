@@ -1,0 +1,226 @@
+:root {
+  --color-azul: #6EC1C0;
+  --color-azul-osc: #507D7C;
+  --color-azul-suave: #CFE6E8;
+  --color-azul-claro: #9BD6E0;
+  --color-gris: #DADADA;
+  --color-texto: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;           /* fuerza scroll vertical */
+}
+
+body {
+  background: #F6F9FC;
+  background-image: url("/Fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  color: var(--color-texto);
+}
+
+/* HEADER */
+.main-header {
+  background: #577C7E;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-bar {
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  background: var(--color-azul);
+  padding: 8px 12px;
+  border-radius: 12px;
+  flex: 1;
+  max-width: 600px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+}
+
+.search-bar i {
+  margin-left: 10px;
+  color: #000;
+  font-size: 18px;
+}
+
+.logo {
+  display: flex;
+  align-items: right;
+  margin-left: auto; 
+  margin-right: 20px;
+  color: #000;
+}
+
+.logo-icon {
+  width: 85px;
+  margin-right: 8px;
+}
+
+/* LATERAL MENU (off-canvas) */
+nav {
+  position: fixed;            /* ← fixed para que no empuje el layout */
+  top: 60px;
+  left: 0;
+  bottom: 0;                  /* ocupa toda la altura visible debajo del header */
+  width: 220px;
+  background: #355D5E;
+  transform: translateX(-100%);   /* oculto a la izquierda */
+  transition: .4s ease;
+  z-index: 10;
+  pointer-events: none;           /* ← no intercepta clicks/scroll cuando está oculto */
+  overflow-y: auto;               /* si el menú es largo, scrollea dentro */
+}
+
+#btn-nav {
+  display: none;
+}
+
+#btn-nav:checked ~ nav {
+  transform: translateX(0);      /* visible */
+  pointer-events: auto;          /* ahora sí puede recibir eventos */
+}
+
+.navigation li {
+  list-style: none;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.navigation a {
+  color: #fff;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background: #264646;
+}
+
+.btn-nav {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  padding: 15px;
+  background: rgba(0,0,0,.2);
+}
+
+/* BIENVENIDA */
+.welcome {
+  background: var(--color-azul-claro);
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 700px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.welcome a {
+  color: #0044aa;
+  text-decoration: underline;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--color-azul-osc);
+  color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.subcard {
+  background: var(--color-azul);
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #D4D3CF;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-section {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-section i {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: var(--color-azul);
+}
+
+.career-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.career-card {
+  background: var(--color-azul-osc);
+  color: white;
+  padding: 15px;
+  width: 220px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.career-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

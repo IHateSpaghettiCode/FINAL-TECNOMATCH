@@ -1,0 +1,15 @@
+Test MBTI
+=========
+
+Aquí se explica cómo realizar el **test de personalidad MBTI** dentro de la aplicación.
+
+- Dirígete a la sección **Test MBTI** desde el menú lateral o presiona "realizar test MBTI" en el home.
+- Lee cuidadosamente cada una de las preguntas presentadas.
+- Responde las preguntas con sinceridad, podras cerciorarte del progreso con la barra que veras
+- Al responder una pregunta, la pagina avanzará automáticamente a la siguiente.
+- Al finalizar, el sistema generará automáticamente tu tipo de personalidad.
+
+.. image:: ../_static/test_mbti.png
+   :alt: Pantalla de registro de usuario
+   :align: center
+   :width: 600px 

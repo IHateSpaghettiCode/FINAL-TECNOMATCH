@@ -1,0 +1,10 @@
+Creación de perfil
+==================
+
+Después de registrarte, podrás observar tu perfil personal.
+
+- Desde el menú principal, selecciona **Mi perfil**.  
+- Podras observar la informacion personal, seguido de ello podras ver los historiales de carreras y personalidades vistos y moverte con facilidad
+
+.. note::
+   Imagen sugerida: ``_static/perfil_usuario.png``

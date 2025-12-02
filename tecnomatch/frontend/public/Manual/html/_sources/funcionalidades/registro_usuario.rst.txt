@@ -1,0 +1,13 @@
+Registro de usuario
+===================
+
+En esta pantalla el usuario puede crear una cuenta para acceder a todas las funciones de TecnoMatch.
+
+- Desde la pantalla inicial, selecciona la opción **Crear cuenta** o **Registrarse**.  
+- Completa los campos solicitados: *Nombre completo*, *Usuario*, *Correo* y *Contraseña*.  
+- Finalmente, presiona el botón **Registrarse** para guardar tu cuenta y acceder al sistema.
+
+.. image:: ../_static/registro_home.png
+   :alt: Pantalla de registro de usuario
+   :align: center
+   :width: 600px

@@ -1,0 +1,49 @@
+### Registro de usuario
+POST http://localhost:4000/api/auth/register
+Content-Type: application/json
+
+{
+  "nombre": "Andrea",
+  "apellido": "Cortes",
+  "correo": "andres@example.com",
+  "password": "123456"
+}
+
+### Login de usuario
+POST http://localhost:4000/api/auth/login
+Content-Type: application/json
+
+{
+  "correo": "andrea@example.com",
+  "password": "123456"
+}
+
+### Obtener carreras (público)
+GET http://localhost:4000/api/careers
+
+### Refrescar carreras (admin)
+POST http://localhost:4000/api/careers/refresh
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MzE0MTI4LCJleHAiOjE3NTg0MDA1Mjh9.mjrqVA40XPYk9XShr0rCkRIZ_gg4TKBkhj5nvyDas6k
+
+### Enviar test MBTI
+POST http://localhost:4000/api/tests
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MzE0MTI4LCJleHAiOjE3NTg0MDA1Mjh9.mjrqVA40XPYk9XShr0rCkRIZ_gg4TKBkhj5nvyDas6k
+
+{
+  "userId": 1,
+  "respuestas": [
+    { "dimension": "EI", "value": 1 },
+    { "dimension": "SN", "value": -1 },
+    { "dimension": "TF", "value": 1 },
+    { "dimension": "JP", "value": -1 }
+  ]
+}
+
+### Ver estadísticas de perfiles
+GET http://localhost:4000/api/stats/personality-counts
+
+### Ver historial
+GET http://localhost:4000/api/users/1/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MzE3MTQ3LCJleHAiOjE3NTg0MDM1NDd9.rPGlH521nEMNK4DyUvkCrbDXHAC7sPPQdKWEkMzcsyQ
+

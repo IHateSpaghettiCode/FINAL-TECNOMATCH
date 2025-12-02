@@ -1,0 +1,36 @@
+.. _introduccion:
+
+Introducción
+============
+
+Bienvenida
+----------
+
+Bienvenido a **TecnoMatch**, una aplicación web desarrollada en la ciudad de Bogotá, Colombia.  
+Aquí podrás descubrir qué carreras del área de **Tecnologías de la Información y las Comunicaciones (TIC)** se adaptan mejor a tu tipo de personalidad, gracias a un test diseñado para orientarte en tu camino vocacional.
+
+Propósito del software
+----------------------
+
+**TecnoMatch** tiene como propósito ayudarte a encontrar una carrera tecnológica que encaje con tus intereses y forma de ser.  
+A través de un test psicológico basado en el modelo **MBTI**, el sistema analiza tus respuestas y te recomienda carreras relacionadas con tu perfil de personalidad, disponibles en la ciudad de Bogotá.
+
+Público objetivo
+----------------
+
+Este manual está dirigido a todas las personas que utilicen **TecnoMatch** y deseen conocer su funcionamiento paso a paso.  
+Aquí encontrarás guías, ejemplos y soluciones a los problemas más comunes que pueden presentarse durante el uso del aplicativo.
+
+Convenciones usadas
+-------------------
+
+En este manual se emplean las siguientes convenciones para facilitar la lectura:
+
+- **Negrita:** indica nombres de botones, opciones o elementos importantes.  
+- *Cursiva:* se usa para resaltar conceptos o términos nuevos.  
+- :ref:`Enlaces internos <funcionalidades>`: te llevarán a secciones específicas del manual.
+
+Contacto de soporte
+-------------------
+
+Si no encuentras una solución en este manual o experimentas un error no documentado, puedes comunicarte con el equipo de soporte completando el formulario disponible en la sección de ayuda dentro del aplicativo o escribiendo al correo: **soporte@tecnomatch.com**.

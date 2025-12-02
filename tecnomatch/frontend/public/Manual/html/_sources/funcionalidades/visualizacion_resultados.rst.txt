@@ -1,0 +1,13 @@
+Visualización de resultados
+===========================
+
+Después de completar el test, podrás **ver tu tipo de personalidad MBTI**.
+
+- Accede a **Mis resultados** desde el menú principal.  
+- Observa tu tipo de personalidad y una breve descripción.  
+- Consulta los gráficos o interpretaciones si están disponibles.
+
+.. image:: ../_static/resultados_mbti.png
+   :alt: Pantalla de registro de usuario
+   :align: center
+   :width: 600px 
