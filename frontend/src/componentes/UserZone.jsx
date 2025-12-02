@@ -16,7 +16,7 @@ const UserZone = () => {
   const [newPassword, setNewPassword] = useState("");
   const fileInputRef = useRef(null);
 
-  const BACKEND_URL = "http://localhost:4000/api";
+  const BACKEND_URL = "https://final-tecnomatch-production.up.railway.app/api";
 
   // =======================
   // FOTO DE PERFIL - VERSIÓN SUPER SIMPLE

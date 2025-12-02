@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:4000/api", // tu backend
+  baseURL: "https://final-tecnomatch-production.up.railway.app/api",
 });
 
 // Interceptor para meter el token en cada petición

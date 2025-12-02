@@ -3,7 +3,7 @@ import styles from "../styles/App.module.css";
 import Fondo from "/Fondo.png"
 import { Link } from "react-router-dom";
 
-const BACKEND_URL = "http://localhost:4000/api";
+const BACKEND_URL = "https://final-tecnomatch-production.up.railway.app/api";
 
 function CareerCards() {
   const [careers, setCareers] = useState([]);

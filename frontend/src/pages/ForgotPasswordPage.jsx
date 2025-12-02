@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useToast } from "../context/ToastContext";
 import styles from "../styles/Login.module.css"; // Reuse login styles
 
-const BACKEND_URL = "http://localhost:4000/api";
+const BACKEND_URL = "https://final-tecnomatch-production.up.railway.app/api";
 
 function ForgotPasswordPage() {
   const [email, setEmail] = useState("");

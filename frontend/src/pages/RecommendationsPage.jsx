@@ -19,7 +19,7 @@ export default function RecommendationsPage() {
           setShowPopup(true);
         }}
       >
-        Ver recomendaciones INTJ
+        Ver recomendaciones 
       </button>
 
       <RecommendationsPopup

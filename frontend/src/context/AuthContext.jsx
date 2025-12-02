@@ -7,7 +7,7 @@ export function AuthProvider({ children }) {
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [user, setUser] = useState(null);
 
-  const API_BASE = "http://localhost:4000/api";
+  const API_BASE = "https://final-tecnomatch-production.up.railway.app/api";
 
   const register = async (data) => {
     try {

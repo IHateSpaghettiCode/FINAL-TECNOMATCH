@@ -10,7 +10,7 @@ export default function CareerPage() {
   const slug = params.slug;
   const { user } = useAuth();
 
-  const BACKEND_URL = "http://localhost:4000/api";
+  const BACKEND_URL = "https://final-tecnomatch-production.up.railway.app/api";
 
   // Buscar carrera en todas las recomendaciones
   const findCareerBySlug = () => {
