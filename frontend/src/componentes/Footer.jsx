@@ -46,12 +46,12 @@ function Footer() {
       {/* Año automático */}
       <div className={styles.footerBottom}>
         <p>© {currentYear} TecnoMatch. Todos los derechos reservados.</p>
-       
-      <p>
-  <a href="/Manual/html/index.html" className={styles.manualBtn} title="Manual de usuario">
-    Manual de Usuario
-  </a>
-</p>
+
+        <p>
+          <a href="/Manual/html/index.html" className={styles.manualBtn} title="Manual de usuario">
+            Manual de Usuario
+          </a>
+        </p>
 
 
       </div>
