@@ -2,9 +2,14 @@
   "builds": [
     {
       "dir": ".",
-      "installCommand": "cd frontend && npm install && cd ../Nuevo_back && npm install",
-      "buildCommand": "cd frontend && npm run build && rm -rf ../Nuevo_back/dist && cp -r dist ../Nuevo_back/dist",
-      "startCommand": "cd Nuevo_back && node src/app.js"
+      "installCommand": "echo '=== Instalando dependencias ===' && cd frontend && npm ci && cd ../Nuevo_back && npm ci",
+      "buildCommand": "echo '=== Construyendo frontend ===' && cd frontend && npm run build && echo '=== Moviendo dist al backend ===' && rm -rf ../Nuevo_back/dist && cp -r dist ../Nuevo_back/dist",
+      "startCommand": "echo '=== Iniciando backend ===' && cd Nuevo_back && npm run start"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "4000"
+  }
 }
+
