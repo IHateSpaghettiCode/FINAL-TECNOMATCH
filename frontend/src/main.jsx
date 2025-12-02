@@ -18,7 +18,7 @@ import CarrerasCards from "./pages/CarrerasCards.jsx"; // 🔹 Nueva página
 import ForgotPasswordPage from "./pages/ForgotPasswordPage.jsx";
 import ConfirmChangePasswordPage from "./pages/ConfirmChangePasswordPage.jsx";
 
-import Layou from "./componentes/layou.jsx";
+import Layou from "./componentes/Layou.jsx";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
