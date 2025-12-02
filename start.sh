@@ -1,31 +1,24 @@
 #!/bin/bash
 set -e
 
-# Variables
-FRONTEND_DIR="frontend"
-BACKEND_DIR="Nuevo_back"
-
 echo "=== Instalando dependencias frontend ==="
-cd $FRONTEND_DIR
-npm ci
-
-echo "=== Instalando dependencias backend ==="
-cd ../$BACKEND_DIR
+cd frontend
 npm ci
 
 echo "=== Construyendo frontend ==="
-cd ../$FRONTEND_DIR
 npm run build
 
 echo "=== Moviendo dist al backend ==="
-rm -rf ../$BACKEND_DIR/dist
-cp -r dist ../$BACKEND_DIR/dist
+rm -rf ../Nuevo_back/dist
+cp -r dist ../Nuevo_back/dist
+
+echo "=== Instalando dependencias backend ==="
+cd ../Nuevo_back
+npm ci
 
 echo "=== Iniciando backend ==="
-cd ../$BACKEND_DIR
-
-# Forzar uso de puerto dinámico de Railway
-export PORT=${PORT:-4000}
+# Railway inyecta process.env.PORT automáticamente
 node src/app.js
+# Si deseas correr localmente, descomenta la línea siguiente y comenta la anterior
 
 
