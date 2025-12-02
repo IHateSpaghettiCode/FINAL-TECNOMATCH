@@ -1,13 +1,15 @@
 {
   "builds": [
     {
-      "installCommand": "./start.sh",
-      "buildCommand": "./start.sh",
-      "startCommand": "./start.sh"
+      "dir": "Nuevo_back",
+      "installCommand": "cd ../frontend && npm ci && cd ../Nuevo_back && npm ci",
+      "buildCommand": "cd ../frontend && npm run build && rm -rf ../Nuevo_back/dist && cp -r dist ../Nuevo_back/dist",
+      "startCommand": "node src/app.js"
     }
   ],
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "PORT": "4000"
   },
   "plugins": [
     {
