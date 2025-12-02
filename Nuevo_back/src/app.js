@@ -54,10 +54,11 @@ const swaggerOptions = {
       description: "API para la plataforma TecnoMatch",
     },
     servers: [
-      {
-        url: "http://localhost:{port}",
-      },
-    ],
+  {
+    url: "/",
+  },
+],
+
     components: {
       securitySchemes: {
         bearerAuth: {
