@@ -2,19 +2,19 @@
   "builds": [
     {
       "dir": ".",
-      "installCommand": "echo 'Dependencies handled in start.sh'",
-      "buildCommand": "echo 'Build handled in start.sh'",
-      "startCommand": "./start.sh"
-    }
-  ],
-  "plugins": [
-    {
-      "name": "nodejs",
-      "version": "20.x"
+      "installCommand": "bash start.sh",
+      "buildCommand": "",
+      "startCommand": "bash start.sh"
     }
   ],
   "env": {
-    "NODE_ENV": "production",
-    "PORT": "4000"
-  }
+    "NODE_ENV": "production"
+  },
+  "plugins": [
+    {
+      "name": "node",
+      "version": "18.x"
+    }
+  ]
 }
+
