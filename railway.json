@@ -1,15 +1,13 @@
 {
   "builds": [
     {
-      "dir": ".",
-      "installCommand": "./start.sh install",
-      "buildCommand": "./start.sh build",
-      "startCommand": "./start.sh start"
+      "installCommand": "./start.sh",
+      "buildCommand": "./start.sh",
+      "startCommand": "./start.sh"
     }
   ],
   "env": {
-    "NODE_ENV": "production",
-    "PORT": "4000"
+    "NODE_ENV": "production"
   },
   "plugins": [
     {
@@ -18,4 +16,3 @@
     }
   ]
 }
-
