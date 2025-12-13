@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://final-tecnomatch-production.up.railway.app/api",
+  baseURL: `${import.meta.env.VITE_API_URL}/api`,
 });
 
 // Interceptor para meter el token en cada petición
